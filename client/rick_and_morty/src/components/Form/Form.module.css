@@ -1,0 +1,117 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 45rem;
+    background-image: url('../img/Header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
+    height: 45rem;
+    background: var(--c, linear-gradient(#3cff00e0, rgba(8, 48, 3, 0.349)));
+}
+
+.h1 {
+    position: absolute;
+    left: 34rem;
+    max-width: 20rem;
+    max-height: 5rem;
+    overflow: hidden;
+    color: #ebebeb;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-size: 4rem;
+    font-family: monospace;
+    background-image: url('../img/botonBack.jpg');
+    background-position: 0;
+    background-size: 10rem;
+    background-repeat: repeat;
+    transform: skew(-20deg);
+    box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.4);
+    text-shadow: 6px 6px 1px rgba(0, 0, 0, 0.651);
+}
+
+.img {
+    position: absolute;
+    top: 9.2rem;
+    border: 10px solid rgba(11, 255, 3, 0.479);
+    box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    width: 15rem;
+    height: 14rem;
+}
+
+.containerForm {
+    position: absolute;
+    top: 25rem;
+    right: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35rem;
+    height: 20rem;
+}
+
+.containerInput {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: skew(-20deg);
+}
+
+.label {
+    position: relative;
+    right: .5rem;
+    padding: .5rem;
+    color: white;
+}
+
+.error {
+    color: red;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.603);
+}
+
+.input {
+    border: none;
+    color: white;
+    transition-duration: 0.5s;
+    padding: 3px;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.63);
+    background: linear-gradient(70deg, rgb(14, 219, 24), rgb(13, 112, 0))
+}
+
+.input:hover {
+    transform: scale(1.05, 1.05);
+    background: linear-gradient(70deg, rgb(12, 139, 18), rgb(7, 63, 0))
+}
+
+.containerBtn {
+    transform: skew(-20deg);
+}
+
+.button {
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    transition-duration: 0.5s;
+    background: linear-gradient(70deg, rgb(6, 199, 15), #9eff44);
+    box-shadow: 6px 6px 1px rgba(0, 0, 0, 0.418);
+    color: white;
+    font-family: monospace;
+    font-weight: bolder;
+    padding: .2rem;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+
+.button:hover {
+    box-shadow: 0px 2px 10px 5px #33ff00;
+    transform: scale(1.09);
+    filter: saturate(2);
+}

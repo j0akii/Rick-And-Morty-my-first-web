@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    padding-top: 3rem;
+    background-image: url('../img/Header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 -10px 30px 1px rgba(0, 0, 0, 1);
+}
+
+.icon {
+    bottom: 2rem;
+    position: absolute;
+    width: 45rem;
+    height: auto;
+    animation-name: AnimacionIcono;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.title {
+    top: 2rem;
+    position: absolute;
+    width: 35rem;
+    height: auto;
+    animation-name: AnimacionTitulo;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.containerBtn {
+    transform: skew(-20deg);
+}
+
+.boton {
+    position: absolute;
+    top: 29rem;
+    left: -2.1rem;
+    width: 12rem;
+    height: 3rem;
+    font-size: 1rem;
+    transition-duration: 0.5s;
+    background: linear-gradient(70deg, rgb(6, 199, 15), #9eff44);
+    box-shadow: 6px 6px 1px rgba(0, 0, 0, 0.418);
+    color: white;
+    font-family: monospace;
+    font-weight: bolder;
+    padding: .2rem;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+
+.boton:hover {
+    box-shadow: 0px 2px 10px 5px #33ff00;
+    transform: scale(1.09);
+    filter: saturate(2);
+}
+
+@keyframes AnimacionTitulo {
+    from {
+        left: 100rem;
+    }
+
+    to {
+        left: 26rem;
+    }
+}
+
+@keyframes AnimacionIcono {
+    from {
+        right: 100rem;
+    }
+
+    to {
+        right: 21rem;
+    }
+}

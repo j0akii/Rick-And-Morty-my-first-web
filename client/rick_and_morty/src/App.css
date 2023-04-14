@@ -1,0 +1,9 @@
+html {
+   scroll-behavior: smooth;
+   scroll-behavior: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+.App {
+   text-align: center;
+   background-image: url('../public/Background.jpg');
+}

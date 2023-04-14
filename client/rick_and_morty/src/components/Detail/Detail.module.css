@@ -1,0 +1,95 @@
+.container {
+    display: flex;
+    justify-content: start;
+    background-image: url('../img/Wallpaper3.png');
+    background-size: cover;
+    width: 100%;
+    height: 40.92rem;
+}
+
+.containerStats {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    width: 45rem;
+    padding: 2rem;
+    padding-top: 5rem;
+    background: var(--c, linear-gradient(#3cff00e0, rgba(8, 48, 3, 0.349)));
+}
+
+.h1 {
+    max-width: 40rem;
+    overflow: hidden;
+    color: #f5f5f5;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-size: 4rem;
+    font-style: oblique;
+    background-image: url('../img/botonBack.jpg');
+    background-position: 0;
+    background-size: 10rem;
+    background-repeat: repeat;
+    transform: skew(-10deg);
+    box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.452);
+    text-shadow: 6px 6px 1px rgba(0, 0, 0, 0.425);
+}
+
+.containerh2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    transform: skew(-10deg);
+    max-width: 40rem;
+    width: 40rem;
+    height: auto;
+    max-height: 40rem;
+    background-image: url('../img/Background.jpg');
+    background-position: 0;
+    background-size: 50rem;
+    box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.452);
+}
+
+.h2 {
+    color: #ebebeb;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    margin-top: .5rem;
+    font-size: 2rem;
+    font-family: monospace;
+    text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.514);
+
+}
+
+/* .img {
+    position: relative;
+    top: 5rem;
+    left: 3rem;
+    width: 30rem;
+    height: 30rem;
+    border: 10px solid rgba(0, 255, 0, 0.568);
+    border-radius: 50%;
+    box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.562);
+} */
+
+.img {
+    position: relative;
+    top: 5rem;
+    left: 3rem;
+    width: 30rem;
+    height: 30rem;
+    --m:
+        radial-gradient(circle farthest-side at right, #000 99%, #0000) 0 100%/46% 92% no-repeat,
+        radial-gradient(circle farthest-side at left, #000 99%, #0000) 100% 0/46% 92% no-repeat;
+    -webkit-mask: var(--m);
+    mask: var(--m);
+    filter: grayscale(.5);
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.img:hover {
+    -webkit-mask-position: 7.5% 50%, 92.5% 50%;
+    mask-position: 7.5% 50%, 92.5% 50%;
+    filter: grayscale(0);
+}

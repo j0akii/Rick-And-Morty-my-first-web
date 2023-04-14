@@ -1,0 +1,152 @@
+ /* 
+PALETA DE COLORES:
+1er: #f5f5f5
+2ndo: #b9e937
+3ero: #57d131
+4to: #406661
+*/
+
+@font-face {
+    font-family: "font-1";
+    src: url("../font/amusette_high_stencil/Amusette High Stencil.ttf") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.img {
+    width: 15rem;
+    height: 22rem;
+    object-fit: cover;
+}
+
+.navStyle {
+    text-decoration: none;
+    transition-duration: .5s;
+}
+
+.h1 {
+    max-width: 12rem;
+    overflow: hidden;
+    color: #f5f5f5;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-size: 1.8rem;
+    font-style: oblique;
+    transition-duration: .5s;
+    background-color: #57d131;
+    transform: skew(-10deg);
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.4);
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.562);
+}
+
+.h1:hover {
+    box-shadow: 0px 2px 10px 5px #33ff00;
+    background-color: white;
+    color: #33ff00;
+}
+
+.h2 {
+    max-width: 12rem;
+    overflow: hidden;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    background-color: #57d131;
+    transform: skew(-10deg);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-style: oblique;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.548);
+}
+
+.p {
+    max-width: 12rem;
+    overflow: hidden;
+    font-size: .7rem;
+    font-style: oblique;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.fav {
+    border: none;
+    position: absolute;
+    background-color: transparent;
+    font-size: 1rem;
+    transition-duration: 0.5s;
+}
+
+.fav:hover {
+    transform: scale(1.2);
+}
+
+.onClose {
+    border: none;
+    padding: .15rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-family: monospace;
+    font-weight: bold;
+    margin-left: 72%;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    background-color: transparent;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.onClose:hover {
+    color: black;
+    background-color: red;
+}
+
+figure {
+    display: grid;
+    overflow: hidden;
+    width: 15rem;
+    height: 22rem;
+    margin: 0px;
+    transform: skew(-7deg);
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.4);
+}
+
+figure>* {
+    grid-area: 1/1;
+    transition: 0.6s;
+}
+
+figure figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: monospace;
+    font-size: 1.8rem;
+    color: #0000;
+    padding: 0.75rem;
+    background: var(--c, linear-gradient(#3cff00e0, rgba(8, 48, 3, 0.349) ) );
+    clip-path: inset(0 var(--_i, 200%) 0 0);
+}
+
+/* #09ff00d5 */
+figure:hover figcaption {
+    --_i: 0%;
+}
+
+figure:hover img {
+    transform: scale(1.2);
+}
+
+figure:hover .onClose {
+    display: grid;
+}
+
+@supports not (-webkit-mask-clip: text) {
+    figure figcaption {
+        color: #fff;
+    }
+}
+

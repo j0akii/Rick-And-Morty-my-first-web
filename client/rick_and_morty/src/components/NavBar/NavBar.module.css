@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    z-index: 900;
+    position: fixed;
+    left: 2rem;
+    width: 95%;
+    height: 2rem;
+    padding-top: .5rem;
+    transform: skew(-20deg);
+    box-shadow: 6px 6px 1px rgba(0, 0, 0, 0.247);
+}
+
+.containerBoton {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: auto;
+}
+
+.inicio, .about, .cards {
+    width: 100%;
+}
+
+.botonInicio, .botonAbout, .botonCards {
+    border: none;
+    background: radial-gradient(circle at center, rgb(14, 219, 24), rgb(13, 112, 0));
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.3s;
+    font-size: 1rem;
+    color: rgb(224, 224, 224);
+    font-family: monospace;
+    font-weight: bolder;
+    box-shadow: inset 0 0 8px 6px rgba(0, 0, 0, 0.418);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+
+.botonInicio:hover, .botonAbout:hover, .botonCards:hover {
+    transform: scale(1.15);
+}
